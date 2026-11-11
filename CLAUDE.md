@@ -42,6 +42,17 @@ Język komunikacji i treści strony: polski.
 - Preferuj semantyczny HTML, dostępność (WCAG: kontrast, teksty alternatywne, nawigacja klawiaturą) i responsywność (podejście mobile-first).
 - Nie dodawaj bibliotek ani zależności zewnętrznych bez zgody.
 
+### Odporność na błędy i wydajność animacji
+Zasady wizualne, ruch i dostępność opisuje `DESIGN.md`. Poniżej tylko wymagania techniczne.
+- Treść i podstawowa nawigacja działają bez JavaScriptu i bez zewnętrznych bibliotek JS (progresywne ulepszanie). Awaria animacji nie może blokować strony ani ukrywać zawartości.
+- Stan początkowy ukrywający element (np. `opacity: 0` przed animacją) ustawiaj dopiero po poprawnym uruchomieniu skryptu animacji (np. klasa dodana do `<html>`), a nie domyślnie w CSS.
+- Skrypty animacji ładuj nieblokująco (`defer` lub moduł) i zabezpiecz je tak, aby ich błąd nie zatrzymał nawigacji ani menu mobilnego.
+- Animuj wyłącznie `transform` i `opacity`. Nie animuj właściwości wymuszających przeliczanie układu (`width`, `height`, `top`, `left`, `margin`). `will-change` stosuj selektywnie i tylko dla elementów faktycznie animowanych.
+- Preferuj CSS (`transition`, `animation`). Wejście sekcji w widok wykrywaj przez `IntersectionObserver`, a nie przez zdarzenie `scroll`.
+- Rezerwuj miejsce na obrazy i placeholdery (`width` i `height` lub `aspect-ratio`), aby uniknąć przesunięć układu.
+- `prefers-reduced-motion: reduce` wyłącza lub ogranicza ruch zbędny, a treść pozostaje widoczna.
+- Przed zgłoszeniem animacji do akceptacji sprawdź ją przy wyłączonym JavaScripcie oraz przy ograniczonej wydajności (emulacja urządzenia mobilnego).
+
 ## 4. Spójność i style
 - Wszystkie podstrony korzystają ze wspólnych arkuszy stylów. Nie duplikuj stylów w poszczególnych plikach HTML i nie używaj stylów inline.
 - Kolory, czcionki, odstępy i rozmiary definiuj raz, jako zmienne CSS (custom properties) w jednym pliku, i używaj ich wszędzie.
