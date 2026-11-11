@@ -26,7 +26,13 @@ Propozycje i rekomendacje AI **nie są** tu wpisywane jako zatwierdzone. Są w `
 
 ## Decyzje
 
-_Brak wpisów._
+### D-001 – Model współpracy: zgoda na całe zadanie
+- **Data:** 2026-11-11
+- **Obszar:** proces
+- **Opis:** Po zatwierdzeniu przez właściciela konkretnego zadania (zakres, pliki, operacje) Claude Code wykonuje wszystkie wymienione w nim rutynowe czynności bez ponownych pytań: utworzenie i przełączenie gałęzi zadania, zmiany wskazanych plików, uzgodnione testy, poprawki w zakresie, `git add`, `git commit`, `git push` gałęzi zadania oraz utworzenie Pull Requesta, o ile plan je wymienia. Zgoda obowiązuje tylko w ramach danego zadania i wygasa po jego zakończeniu. Zmiany architektury, technologii, zatwierdzonych treści i wyglądu wymagają wyraźnej akceptacji właściciela; jeżeli zostały szczegółowo opisane i zaakceptowane w planie zadania, nie wymagają ponownej zgody podczas jego realizacji, a każde odstępstwo od planu wymaga nowej zgody. Zawsze wymagają osobnej zgody: merge do `main`, publikacja na hostingu (deployment), instalacja skilli, bibliotek i narzędzi, zmiana zasad bezpieczeństwa, usuwanie gałęzi, przepisywanie historii Git i inne operacje destrukcyjne. Po zadaniu Claude Code przedstawia jeden zbiorczy raport. Rekomendacje recenzji ChatGPT są wprowadzane dopiero po akceptacji właściciela.
+- **Uzasadnienie:** Ograniczenie liczby pytań o drobne operacje techniczne przy zachowaniu pełnej kontroli właściciela nad decyzjami projektowymi.
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
 
 <!-- Wzór wpisu:
 
