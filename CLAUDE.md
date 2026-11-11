@@ -6,9 +6,10 @@ Język komunikacji i treści strony: polski.
 
 ## 0. Role i podział decyzji
 - **Właściciel projektu** podejmuje wszystkie ostateczne decyzje dotyczące architektury, technologii, wyglądu, funkcjonalności i treści.
-- **ChatGPT** pełni funkcję analityka i recenzenta. Jego uwagi i rekomendacje są zapisywane w `docs/REVIEW.md`.
-- **Claude Code** odpowiada za implementację i testowanie zmian zatwierdzonych przez właściciela. Nie podejmuje decyzji projektowych na własną rękę.
+- **ChatGPT** pełni funkcję analityka, planisty i recenzenta. Jego uwagi i rekomendacje są zapisywane w `docs/REVIEW.md`. ChatGPT widzi tylko to, co jest na GitHubie, a nie lokalne, niewysłane zmiany.
+- **Claude Code** odpowiada za implementację, testowanie i przygotowanie zmian zatwierdzonych przez właściciela. Nie podejmuje decyzji projektowych na własną rękę.
 - **Rekomendacje AI (Claude, ChatGPT i inne) nie są automatycznie zatwierdzonymi decyzjami.** Wdrożenie wymaga wyraźnej akceptacji właściciela.
+- Model zgody na całe zadanie opisuje punkt 5 i decyzja D-001 w `docs/DECISIONS.md`.
 - Zatwierdzone decyzje właściciela są rejestrowane w `docs/DECISIONS.md`. Wpis o statusie innym niż „Zatwierdzona" nie uprawnia do wdrożenia.
 - Jeśli rekomendacja AI jest sprzeczna z zatwierdzoną decyzją, obowiązuje decyzja właściciela. Sprzeczność zgłoś do rozstrzygnięcia.
 - Pliki `docs/DECISIONS.md` i `docs/REVIEW.md` aktualizuj tylko na polecenie właściciela.
@@ -16,7 +17,7 @@ Język komunikacji i treści strony: polski.
 - Poprawki techniczne istniejących wpisów (np. literówka, błędny odnośnik, formatowanie) są dopuszczalne wyłącznie po zgodzie właściciela i nie mogą zmieniać treści decyzji.
 
 ## 1. Zatwierdzone elementy projektu
-- Zatwierdzone teksty, logo, kolory, typografia i inne elementy identyfikacji wizualnej mogą być zmieniane **wyłącznie za wyraźną zgodą właściciela projektu**.
+- Zatwierdzone teksty, logo, kolory, typografia i inne elementy identyfikacji wizualnej mogą być zmieniane **wyłącznie za wyraźną zgodą właściciela projektu** (zgoda może być zawarta w szczegółowo opisanym i zaakceptowanym planie zadania, punkt 2).
 - Nie poprawiaj, nie skracaj i nie przeredagowuj zatwierdzonych treści na własną rękę, także w celu poprawy stylu lub pisowni. Zaproponuj zmianę i poczekaj na decyzję.
 - Elementy zatwierdzone należy oznaczać w kodzie lub dokumentacji, aby było widać, które są chronione.
 - Nie wymyślaj treści medycznych, cen, godzin otwarcia, danych kontaktowych ani opinii pacjentów. W razie braku danych użyj wyraźnie oznaczonego tekstu zastępczego i zapytaj.
@@ -24,6 +25,9 @@ Język komunikacji i treści strony: polski.
 ## 2. Plan przed większymi zmianami
 - Przed większą zmianą (nowa podstrona, zmiana struktury, układu, stylów globalnych, dodanie zależności lub narzędzia) przedstaw plan: cel, zakres, lista plików, ryzyka.
 - Poczekaj na akceptację, zanim zaczniesz wprowadzać zmiany.
+- Plan wymienia wprost także **operacje objęte zgodą**: gałąź (nazwa), zmieniane pliki, uzgodnione testy, poprawki błędów w zakresie, `git add` i `git commit`, `git push` gałęzi zadania oraz utworzenie Pull Requesta. Operacja niewymieniona w planie nie jest objęta zgodą (punkt 5).
+- Zmiany architektury, technologii, zatwierdzonych treści i wyglądu wymagają wyraźnej akceptacji właściciela. Jeżeli zostały szczegółowo opisane i zaakceptowane w planie zadania, nie wymagają ponownej zgody podczas jego realizacji. **Każde odstępstwo od planu wymaga nowej zgody.**
+- Przebieg zadania: plan, akceptacja właściciela, wykonanie, commit i push (jeśli objęte zgodą), Pull Request do przeglądu ChatGPT. Uwagi z przeglądu to rekomendacje i są wprowadzane dopiero po akceptacji właściciela. Merge następuje wyłącznie po osobnej zgodzie właściciela.
 - Małe, jednoznaczne poprawki w ramach bieżącego zadania można wykonać bez planu, ale trzeba je zgłosić zgodnie z punktem 8.
 
 ## 3. Technologia i architektura
@@ -46,11 +50,24 @@ Język komunikacji i treści strony: polski.
 - Przyjmij jednolite nazewnictwo klas, plików i folderów (np. małe litery, myślniki, bez polskich znaków w nazwach plików).
 
 ## 5. Git, gałęzie i publikacja
-- **Nie wykonuj** `git add`, `git commit`, `git push`, `git merge`, `git rebase` ani żadnej publikacji (hosting, deployment) bez wyraźnej zgody właściciela projektu.
-- Większe zmiany powinny być przygotowywane na **osobnych gałęziach Git**, a nie bezpośrednio na `main`. **Utworzenie gałęzi (podobnie jak jej usunięcie lub przełączenie) wymaga zgody właściciela.** Zaproponuj nazwę gałęzi i poczekaj na decyzję.
-- Zgoda na jedną operację nie oznacza zgody na kolejne.
-- Przed zaproponowaniem commita pokaż listę plików i proponowany opis commita.
-- Operacji odczytowych (`git status`, `git diff`, `git log`) można używać swobodnie.
+### Zgoda na całe zadanie
+- Zatwierdzony plan zadania (punkt 2) obejmuje wszystkie **wymienione w nim** operacje. Wykonuj je bez ponownych pytań i bez zatrzymywania się po każdym kroku.
+- Zgoda dotyczy wyłącznie tego zadania, jego gałęzi i wymienionych plików. **Wygasa po zakończeniu zadania** i nie przenosi się na kolejne.
+- Zgoda musi być wyraźna. Niejasną lub urwaną wiadomość traktuj jako brak zgody i dopytaj.
+- Każde odstępstwo od zatwierdzonego planu (nowe pliki, nowe operacje, nowe narzędzia, zmiana zakresu) wymaga nowej zgody. Zatrzymaj się i zapytaj.
+- Większe zmiany przygotowuj na **osobnej gałęzi**, nigdy bezpośrednio na `main`. Utworzenie i przełączenie na gałąź wymienioną w zatwierdzonym planie nie wymaga ponownej zgody.
+- Przed commitem sprawdź listę zmienionych plików, zakres diff, brak sekretów i brak plików niezwiązanych z zadaniem. Przy niezgodności zatrzymaj się. Push wykonuj tylko gałęzi zadania, bez `--force`.
+
+### Bez zgody (analiza)
+- Czytanie plików i dokumentacji, `git status`, `git diff`, `git log`, `git fetch` i inne bezpieczne kontrole niezmieniające plików. Planowanie oraz zgłaszanie błędów, ryzyk i konfliktów.
+- To nie jest zgoda na instalowanie narzędzi, uruchamianie niezweryfikowanego kodu ani zmienianie plików.
+
+### Zawsze osobna zgoda właściciela, także w ramach zatwierdzonego zadania
+- Scalanie do `main` (w tym merge Pull Requesta) i każda publikacja na hostingu (deployment).
+- Instalacja nowych skilli, bibliotek i narzędzi.
+- Zmiana zasad bezpieczeństwa.
+- Usuwanie gałęzi, przepisywanie historii (`rebase`, `commit --amend` po wysłaniu, `reset --hard`, `push --force`) i inne operacje destrukcyjne.
+- Zmiany architektury, technologii, zatwierdzonych treści, logo, kolorów, typografii, wyglądu oraz nowe funkcjonalności, chyba że zostały szczegółowo opisane i zaakceptowane w planie zadania (punkt 2). Każde odstępstwo od planu wymaga nowej zgody.
 
 ## 6. Bezpieczeństwo i dane
 - Nie umieszczaj w repozytorium haseł, kluczy API, tokenów, plików `.env` ani innych sekretów.
@@ -63,13 +80,16 @@ Język komunikacji i treści strony: polski.
 - Modyfikuj wyłącznie pliki związane z bieżącym zadaniem.
 - Nie wykonuj przy okazji refaktoryzacji, formatowania ani porządków w plikach niezwiązanych z zadaniem.
 - Jeśli zauważysz problem poza zakresem zadania, zgłoś go i poczekaj na decyzję, nie naprawiaj go samodzielnie.
-- Nie usuwaj ani nie nadpisuj istniejących plików bez wcześniejszego sprawdzenia ich zawartości i zgody.
+- Zmieniaj pliki wskazane w zatwierdzonym planie, po sprawdzeniu ich zawartości. Usuwaj pliki tylko wtedy, gdy plan wymienia je wprost.
 
 ## 8. Raportowanie zmian
-Po każdej zmianie przedstaw:
-1. listę zmodyfikowanych, dodanych i usuniętych plików,
-2. krótki opis zmian w każdym pliku,
-3. informację o tym, czego nie sprawdzono lub nie zakończono.
+Po zakończeniu zadania przedstaw **jeden zbiorczy raport** (bez raportów pośrednich, chyba że pojawi się problem):
+1. wykonane czynności,
+2. listę zmodyfikowanych, dodanych i usuniętych plików z krótkim opisem zmian,
+3. wyniki testów oraz to, czego nie sprawdzono lub nie zakończono,
+4. identyfikator commita i link do Pull Requesta, jeśli istnieją,
+5. problemy i ryzyka,
+6. elementy wymagające decyzji właściciela.
 
 ## 9. Styl komunikacji
 - Komunikuj się po polsku, zwięźle i konkretnie.
@@ -80,3 +100,4 @@ Po każdej zmianie przedstaw:
 - Skill `ui-ux-pro-max` (`.claude/skills/ui-ux-pro-max/`, wersja i źródło w pliku `VERSION`) daje wyłącznie **rekomendacje**. Nie zastępuje zatwierdzonych kolorów, logo, typografii ani tekstów (punkt 1).
 - Flagi `--persist` i `--force` skryptu `search.py` (zapis plików `design-system/`) wymagają mojej zgody.
 - Aktualizacja skilla lub dodanie innych skilli wymaga mojej zgody i wcześniejszego przeglądu kodu.
+- Taste Skill jest odłożony: nie instaluj go ani nie uruchamiaj, dopóki właściciel nie zdecyduje inaczej.
