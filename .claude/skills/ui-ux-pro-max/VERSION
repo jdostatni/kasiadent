@@ -1,0 +1,14 @@
+ui-ux-pro-max (nextlevelbuilder/ui-ux-pro-max-skill)
+Wersja:   v2.15.0
+Commit:   a38d04c3d5c298c851dbe5e6ee1965ee3de42cb5
+Licencja: MIT (plik LICENSE obok)
+Zrodlo:   https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+
+Skopiowano: SKILL.md, data/, references/, scripts/ (core.py, design_system.py,
+reasoning_contract.py, search.py). Pominieto: scripts/tests/, validate_data.py,
+pozostale skille z repozytorium, CLI.
+
+Lokalne zmiany wzgledem oryginalu:
+- SKILL.md: ${CLAUDE_PLUGIN_ROOT}/.claude/skills/ui-ux-pro-max/ zastapiono sciezka
+  projektowa .claude/skills/ui-ux-pro-max/ (zmienna dziala tylko dla pluginow).
+Zasady uzycia: patrz CLAUDE.md (sekcja 10).
