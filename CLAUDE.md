@@ -4,6 +4,17 @@ Projekt: strona internetowa gabinetu stomatologicznego dr KASIA DENT.
 Repozytorium: https://github.com/jdostatni/kasiadent
 Język komunikacji i treści strony: polski.
 
+## 0. Role i podział decyzji
+- **Właściciel projektu** podejmuje wszystkie ostateczne decyzje dotyczące architektury, technologii, wyglądu, funkcjonalności i treści.
+- **ChatGPT** pełni funkcję analityka i recenzenta. Jego uwagi i rekomendacje są zapisywane w `docs/REVIEW.md`.
+- **Claude Code** odpowiada za implementację i testowanie zmian zatwierdzonych przez właściciela. Nie podejmuje decyzji projektowych na własną rękę.
+- **Rekomendacje AI (Claude, ChatGPT i inne) nie są automatycznie zatwierdzonymi decyzjami.** Wdrożenie wymaga wyraźnej akceptacji właściciela.
+- Zatwierdzone decyzje właściciela są rejestrowane w `docs/DECISIONS.md`. Wpis o statusie innym niż „Zatwierdzona" nie uprawnia do wdrożenia.
+- Jeśli rekomendacja AI jest sprzeczna z zatwierdzoną decyzją, obowiązuje decyzja właściciela. Sprzeczność zgłoś do rozstrzygnięcia.
+- Pliki `docs/DECISIONS.md` i `docs/REVIEW.md` aktualizuj tylko na polecenie właściciela.
+- **Zatwierdzonych decyzji nie wolno merytorycznie nadpisywać ani usuwać.** Nowa decyzja zastępująca poprzednią jest zapisywana jako kolejny wpis, a poprzedni otrzymuje status „Zastąpiona przez D-xxx".
+- Poprawki techniczne istniejących wpisów (np. literówka, błędny odnośnik, formatowanie) są dopuszczalne wyłącznie po zgodzie właściciela i nie mogą zmieniać treści decyzji.
+
 ## 1. Zatwierdzone elementy projektu
 - Zatwierdzone teksty, logo, kolory, typografia i inne elementy identyfikacji wizualnej mogą być zmieniane **wyłącznie za wyraźną zgodą właściciela projektu**.
 - Nie poprawiaj, nie skracaj i nie przeredagowuj zatwierdzonych treści na własną rękę, także w celu poprawy stylu lub pisowni. Zaproponuj zmianę i poczekaj na decyzję.
