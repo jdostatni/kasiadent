@@ -47,7 +47,7 @@ Zasady wizualne, ruch i dostępność opisuje `DESIGN.md`. Poniżej tylko wymaga
 - Treść i podstawowa nawigacja działają bez JavaScriptu i bez zewnętrznych bibliotek JS (progresywne ulepszanie). Awaria animacji nie może blokować strony ani ukrywać zawartości.
 - Stan początkowy ukrywający element (np. `opacity: 0` przed animacją) ustawiaj dopiero po poprawnym uruchomieniu skryptu animacji (np. klasa dodana do `<html>`), a nie domyślnie w CSS.
 - Skrypty animacji ładuj nieblokująco (`defer` lub moduł) i zabezpiecz je tak, aby ich błąd nie zatrzymał nawigacji ani menu mobilnego.
-- Animuj wyłącznie `transform` i `opacity`. Nie animuj właściwości wymuszających przeliczanie układu (`width`, `height`, `top`, `left`, `margin`). `will-change` stosuj selektywnie i tylko dla elementów faktycznie animowanych.
+- Preferuj animowanie `transform` i `opacity`. Nie animuj właściwości wymuszających przeliczanie układu (`width`, `height`, `top`, `left`, `margin`). `will-change` stosuj selektywnie i tylko dla elementów faktycznie animowanych.
 - Preferuj CSS (`transition`, `animation`). Wejście sekcji w widok wykrywaj przez `IntersectionObserver`, a nie przez zdarzenie `scroll`.
 - Rezerwuj miejsce na obrazy i placeholdery (`width` i `height` lub `aspect-ratio`), aby uniknąć przesunięć układu.
 - `prefers-reduced-motion: reduce` wyłącza lub ogranicza ruch zbędny, a treść pozostaje widoczna.
