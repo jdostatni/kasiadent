@@ -4,6 +4,13 @@
 **Data weryfikacji źródeł:** 13.11.2026. Dokumentacja dostawców zmienia się szybko, więc źródła i terminy weryfikujemy co kwartał (punkt 12.4).
 **Domena kanoniczna:** `https://www.kasiadent.pl/`
 
+## Aktualizacja spójności z decyzjami (15.11.2026)
+- **Adresy PL/EN:** zatwierdzona mapa `content/docs/URL_MAP_PL_EN.md` (tabela w 4.2) zastępuje wcześniejsze propozycje i sformułowania „DO ZATWIERDZENIA” dotyczące tras. Historyczne przykłady URL w JSON-LD i opisach nie mogą nadpisywać zatwierdzonej mapy; przed implementacją należy używać aktualnych adresów (np. protetyka EN: `/en/services/prosthodontics`).
+- **Siedem usług — równa ekspozycja:** decyzja 182 B / `D-128` wymaga równego priorytetu prezentacji wszystkich siedmiu usług w interfejsie. P1/P2/P3 z rozdziału 8 to **wyłącznie robocze priorytety analizy fraz, pomiaru i kolejności weryfikacji SEO**, a nie ranking usług, kolejność kart, większe kafelki, wyróżnienie wizualne ani ograniczenie jakości optymalizacji innych usług. Wszystkie siedem stron otrzymuje pełne podstawowe SEO.
+- **Profil Firmy w Google:** decyzja 184 B / `D-130` — uruchomienie strony przed pracami nad Profilem Firmy; wcześniejsze wymagania „przed startem” w tym dokumencie są nieaktualne.
+- **Wybór hostingu i poczta:** decyzje 192–198 zatwierdzone w rozmowie, jeszcze niezapisane w rejestrze; Hostido lub porównywalny dostawca do wyboru, publiczny adres `drkasiadent@gmail.com`. Nie oznacza to wyboru konkretnego hostingu.
+- Pozostałe historyczne wzmianki „DO ZATWIERDZENIA” należy interpretować zgodnie z późniejszymi zatwierdzonymi decyzjami w `docs/DECISIONS.md`, nie jako ponowne otwarcie decyzji.
+
 ## 0. Zasady nadrzędne i oznaczenia
 - Pierwszeństwo mają `CLAUDE.md`, `DESIGN.md`, `docs/DECISIONS.md`, zatwierdzone teksty i najnowsze zatwierdzone decyzje właściciela.
 - Oznaczenia:
@@ -23,7 +30,7 @@
 | Host kanoniczny | `www.kasiadent.pl`; adres produkcyjny `https://www.kasiadent.pl/` |
 | Domena dodatkowa | `drkasiadent.pl` oraz `www.drkasiadent.pl`, z przekierowaniem HTTP 301 na domenę główną. Wykupiona na 2 lata, przedłużenie to osobna decyzja |
 | Adresy absolutne | Canonical, hreflang, `sitemap.xml`, JSON-LD, Open Graph i odnośniki absolutne używają wyłącznie `https://www.kasiadent.pl` |
-| Języki | Wariant A: PL w katalogu głównym `/`, EN pod `/en/`. Polskie adresy bez zmian. Slugi EN są tłumaczone i czytelne. **Zatwierdzona jest architektura PL `/` i EN `/en/`. Pełna mapa slugów EN nie jest zatwierdzona i wymaga osobnej akceptacji.** Adres `/en/services/prosthetics` jest wyłącznie przykładem ilustracyjnym i nie zatwierdza pozostałej mapy |
+| Języki | Wariant A: PL w katalogu głównym `/`, EN pod `/en/`. Polskie adresy bez zmian. Slugi EN są tłumaczone i czytelne. **Pełna mapa slugów EN została zatwierdzona 15.11.2026 w `content/docs/URL_MAP_PL_EN.md`.** Adres `/en/services/prosthetics` jest wyłącznie przykładem ilustracyjnym i nie zatwierdza pozostałej mapy |
 | Wybór języka | Bez automatycznego przekierowania według lokalizacji lub języka przeglądarki jako jedynego sposobu dostępu do wersji językowej |
 | hreflang i canonical | `pl` i `en`; metoda: znaczniki w `<head>`; każda istniejąca para ma wzajemne odnośniki (z odnośnikiem do siebie); każda wersja wskazuje własny canonical (EN nie wskazuje PL); bez hreflang do nieistniejących lub nieopublikowanych tłumaczeń; strona bez odpowiednika nie ma hreflang; `x-default` niewymagany |
 | Przekierowania domen | 301, jednym skokiem, bez łańcuchów i pętli, z zachowaniem odpowiadających sobie ścieżek. Obsługa nieistniejących ścieżek zależna od możliwości hostingu (punkt 3.2) |
@@ -98,27 +105,34 @@ Każde z zatwierdzonych przekierowań prowadzi **jednym skokiem** na adres końc
 
 ## 4. Struktura URL i tabela adresów PL/EN
 ### 4.1 Zasady
-- **[PRAKTYKA]** Małe litery, myślniki, bez polskich znaków i bez apostrofów (`CLAUDE.md`, punkt 4), bez parametrów w adresach treści. Adresy stabilne. Zmiana po publikacji wymaga 301 oraz aktualizacji sitemapy, canonical i hreflang.
-- **Polskich adresów nie zmieniamy bez osobnej zgody.** Slugi EN są tłumaczone i czytelne. **Zatwierdzona jest architektura PL `/` i EN `/en/`. Pełna mapa slugów EN nie jest zatwierdzona i wymaga osobnej akceptacji.** Adres `/en/services/prosthetics` jest przykładem ilustracyjnym i nie zatwierdza pozostałej mapy. Wszystkie angielskie slugi w tabeli 4.2 są propozycjami.
-- Strona EN trafia do hreflang i sitemapy dopiero, gdy jest opublikowana. Wersje EN są roboczymi tłumaczeniami wymagającymi przeglądu gabinetu przed publikacją.
+- Obowiązuje zatwierdzona mapa `content/docs/URL_MAP_PL_EN.md` z 15.11.2026: PL w `/`, EN w `/en/`. Wszystkie trasy w punkcie 4.2 są zatwierdzone; wcześniejsze przykłady i propozycje slugów w tym dokumencie nie stanowią alternatywnych tras.
+- Małe litery, myślniki, bez polskich znaków; adresy stabilne. Zmiana po publikacji wymaga 301 oraz aktualizacji sitemapy, canonical, hreflang i linków wewnętrznych.
+- Wdrożenie tras wymaga odpowiadających im rzeczywistych stron; nie dodajemy nieopublikowanych adresów do sitemap i hreflang.
 
-### 4.2 Tabela adresów
-| Strona | Adres PL (status) | Adres EN (status) | Alternatywa EN |
-|---|---|---|---|
-| Start | `/` (zatwierdzony) | `/en/` (zatwierdzony) | – |
-| O mnie | adres DO ZATWIERDZENIA (proponowany: `/o-mnie`) | `/en/about-me` (propozycja) | `/en/about` |
-| Usługi (przegląd) | `/uslugi` (brak zatwierdzonego pliku treści; punkt 7.3) | `/en/services` (propozycja) | – |
-| Stomatologia zachowawcza | `/uslugi/stomatologia-zachowawcza` (zatwierdzony) | `/en/services/general-dentistry` (propozycja) | `/en/services/restorative-dentistry` |
-| Endodoncja mikroskopowa | `/uslugi/leczenie-kanalowe-pod-mikroskopem` (zatwierdzony) | `/en/services/root-canal-treatment-under-microscope` (propozycja) | `/en/services/microscopic-endodontics` |
-| Protetyka | `/uslugi/protetyka` (zatwierdzony) | `/en/services/prosthetics` (przykład ilustracyjny, mapa niezatwierdzona) | – |
-| Stomatologia estetyczna | `/uslugi/stomatologia-estetyczna` (zatwierdzony) | `/en/services/cosmetic-dentistry` (propozycja) | `/en/services/aesthetic-dentistry` |
-| Profilaktyka | `/uslugi/profilaktyka` (zatwierdzony) | `/en/services/preventive-dentistry` (propozycja) | – |
-| Stomatologia dziecięca | `/uslugi/stomatologia-dziecieca` (zatwierdzony) | `/en/services/childrens-dentistry` (propozycja) | `/en/services/pediatric-dentistry` |
-| Diagnostyka RTG | `/uslugi/diagnostyka-rtg` (zatwierdzony) | `/en/services/dental-x-ray` (propozycja) | `/en/services/dental-x-ray-diagnostics` |
-| Cennik | `/cennik` (z zatwierdzonych odnośników, do potwierdzenia) | `/en/price-list` (propozycja) | `/en/prices` |
-| Pierwsza wizyta | `/pierwsza-wizyta` (z zatwierdzonych odnośników, do potwierdzenia) | `/en/first-visit` (propozycja) | – |
-| Kontakt | `/kontakt` (z zatwierdzonych odnośników, do potwierdzenia) | `/en/contact` (propozycja) | – |
-| Blog | adres DO ZATWIERDZENIA (proponowany: `/blog`) | `/en/blog` (propozycja) | – |
+### 4.2 Zatwierdzona mapa adresów PL/EN (stan 15.11.2026)
+Poniższa tabela odzwierciedla **zatwierdzony** plik `content/docs/URL_MAP_PL_EN.md`, który jest źródłem prawdy dla tras. Zastępuje wcześniejsze propozycje i przykładowe slugi EN z pierwotnej analizy SEO. Aktualizacje tras wymagają osobnej decyzji i synchronizacji obu dokumentów.
+
+| Podstrona | PL | EN |
+|---|---|---|
+| Strona główna | `/` | `/en/` |
+| O mnie | `/o-mnie` | `/en/about` |
+| Usługi — indeks | `/uslugi` | `/en/services` |
+| Cennik | `/cennik` | `/en/pricing` |
+| Pierwsza wizyta | `/pierwsza-wizyta` | `/en/first-visit` |
+| Blog — indeks | `/blog` | `/en/blog` |
+| Kontakt | `/kontakt` | `/en/contact` |
+| Stomatologia zachowawcza | `/uslugi/stomatologia-zachowawcza` | `/en/services/general-dentistry` |
+| Endodoncja mikroskopowa | `/uslugi/leczenie-kanalowe-pod-mikroskopem` | `/en/services/root-canal-treatment` |
+| Protetyka | `/uslugi/protetyka` | `/en/services/prosthodontics` |
+| Stomatologia estetyczna | `/uslugi/stomatologia-estetyczna` | `/en/services/cosmetic-dentistry` |
+| Profilaktyka | `/uslugi/profilaktyka` | `/en/services/preventive-dentistry` |
+| Stomatologia dziecięca | `/uslugi/stomatologia-dziecieca` | `/en/services/childrens-dentistry` |
+| Diagnostyka RTG | `/uslugi/diagnostyka-rtg` | `/en/services/dental-x-rays` |
+| Artykuł — mycie zębów | `/blog/jak-prawidlowo-myc-zeby` | `/en/blog/how-to-brush-your-teeth-properly` |
+| Artykuł — leczenie kanałowe | `/blog/leczenie-kanalowe-czego-sie-spodziewac` | `/en/blog/what-to-expect-from-root-canal-treatment` |
+| Artykuł — licówki | `/blog/licowki-porcelanowe-czy-kompozytowe` | `/en/blog/porcelain-vs-composite-veneers` |
+| Polityka prywatności i cookies | `/polityka-prywatnosci` | `/en/privacy-policy` |
+
 
 ## 5. Techniczne SEO: indeksowanie, `robots.txt`, `sitemap.xml`, canonical
 
@@ -363,7 +377,7 @@ Jeden H1 na stronie, pochodzący z zatwierdzonej treści. Hierarchia bez przesko
 Uwagi: Diagnostyka RTG nie rozszerza zatwierdzonego zakresu (tomografia CBCT to współpraca z zewnętrzną pracownią i nie jest celem fraz). Rekomendacja po dobadaniu: wybór frazy dominującej dla stomatologii dziecięcej („dentysta dziecięcy" czy „stomatolog dziecięcy"). Nie celujemy w frazy spoza zakresu (NFZ, nazwiska innych lekarzy, „endodonta", „protetyk", tomografia).
 
 ### 8.5 Priorytety P1/P2/P3
-Priorytet określa kolejność prac i weryfikacji, a nie wartość usługi. Po publikacji zmieniamy go na podstawie danych z Search Console.
+Priorytet P1/P2/P3 określa wyłącznie kolejność analiz i weryfikacji SEO, nie wagę usługi w ofercie ani jej ekspozycję na stronie. Wszystkie siedem usług prezentujemy równorzędnie (decyzja 182 B / D-128) i zapewniamy im pełne podstawowe SEO. Po publikacji kolejność dalszych analiz można dostosować do danych Search Console.
 - **P1 Start:** jedyne frazy z Redą z mierzalnym (zaokrąglonym) wolumenem; wejście do serwisu; zatwierdzony H1 z „gabinet stomatologiczny … w Redzie".
 - **P1 Endodoncja:** wyróżnik gabinetu w zatwierdzonych materiałach (specjalne zainteresowanie lekarza, mikroskop, koferdam) i duże krajowe zainteresowanie bez miasta. Lokalnie „leczenie kanałowe Reda" to 50 (Polska) i 0 (lokalny), więc strategia opiera się na autorytecie tematycznym i sygnałach lokalnych.
 - **P1 Stomatologia estetyczna:** strona-właściciel „licówki Reda" oraz bondingu i wybielania. Krajowe zainteresowanie wysokie, frazy z Redą bez danych (nie zero).
@@ -844,7 +858,7 @@ Każdy etap to osobne zadanie z planem (`D-001`). Merge i publikacja zawsze wyma
 - `WYMAGANIA_DLA_CLAUDE.md` mówi o „projekcie strony w Astro", a `CLAUDE.md` o wersji początkowej w czystym HTML/CSS/JS z możliwością późniejszej migracji do Astro. **DO ZATWIERDZENIA**: wpływa na sposób generowania `sitemap.xml` i przekierowań.
 - Fraza „dentysta" nie występuje w zatwierdzonych treściach (punkt 8.2). Frazy z mapy są analizą, a zmiany tekstów wymagają osobnych zgód.
 - Rozbieżny e-mail (Kontakt a Pierwsza wizyta) i godziny bez dni tygodnia blokują kompletne dane `Dentist`.
-- Strony `/uslugi`, O mnie i Blog nie mają zatwierdzonych adresów. Pozycja „Usługi" w menu wymaga celu.
+- Adresy `/uslugi`, `/o-mnie` i `/blog` zostały zatwierdzone w `content/docs/URL_MAP_PL_EN.md` (15.11.2026). Pozycja „Usługi" w menu wymaga celu.
 - Wersje EN są roboczymi tłumaczeniami wymagającymi przeglądu gabinetu (README materiałów). Zdanie o konsultacjach po polsku i angielsku w zatwierdzonym tekście O mnie nie rozstrzyga `knowsLanguage`, które pozostaje do potwierdzenia.
 - Cennik ma charakter orientacyjny, więc bez `Offer` i cen w schema.
 - Sformułowania marketingowe na stronie głównej (np. o doświadczeniu i nowoczesnych metodach) podlegają weryfikacji prawnej (punkt 10.3).
@@ -861,7 +875,7 @@ Zatwierdzone i niepowtarzane tutaj: domena główna, host kanoniczny, domena dod
 - [ ] Wariant obsługi nieistniejących ścieżek (A lub B), zależny od hostingu.
 - [ ] Konwencja adresów (bez `.html` i bez końcowego ukośnika) i obsługa wariantów, zależna od hostingu.
 - [ ] Adresy polskich stron bez zatwierdzonych ścieżek: O mnie, Blog. Formalne potwierdzenie `/cennik`, `/pierwsza-wizyta`, `/kontakt`.
-- [ ] Cel pozycji „Usługi" w menu (czy `/uslugi` istnieje jako strona, czy menu rozwija listę usług).
+- [x] Strona indeksu usług `/uslugi` oraz `/en/services` uwzględniona w zatwierdzonej mapie URL; szczegóły interakcji menu wynikają z decyzji projektowych.
 - [ ] Data wygaśnięcia, rejestrator i autoodnawianie obu domen oraz sprawdzenie, czy domeny miały wcześniej treści w indeksie. **WYMAGA DZIAŁANIA WŁAŚCICIELA.**
 
 **Treści i dane wyświetlane na stronie**
@@ -876,14 +890,14 @@ Zatwierdzone i niepowtarzane tutaj: domena główna, host kanoniczny, domena dod
 
 ### 17.2 Decyzje potrzebne tylko do wdrożenia określonych funkcji
 **Wersja angielska (przed publikacją EN)**
-- [ ] Pełna mapa adresów EN (poza zatwierdzoną architekturą `/en/`; `/en/services/prosthetics` jest przykładem) i wybór wariantów slugów.
+- [x] Pełna mapa adresów EN zatwierdzona 15.11.2026 w `content/docs/URL_MAP_PL_EN.md`; implementacja i testy tras pozostają do wykonania.
 - [ ] Publikacja angielskich tłumaczeń (przegląd gabinetu i termin).
 - [ ] Przełącznik języka PL/EN (wygląd, `DESIGN.md`).
 - [ ] Zatwierdzone angielskie nazwy usług (jeśli mają trafić do JSON-LD).
 
 **Okruszki (przed wdrożeniem okruszków)**
 - [ ] Wariant okruszków (1, 2 lub 3) i wygląd komponentu, przy zatwierdzaniu struktury i projektu. Do tego czasu obowiązuje wariant 3.
-- [ ] Zatwierdzenie strony `/uslugi` i `/en/services` (tylko dla wariantu 1).
+- [x] Adresy `/uslugi` i `/en/services` zatwierdzone w mapie URL; wykonanie stron pozostaje zadaniem wdrożeniowym.
 
 **Dane w znacznikach JSON-LD (przed użyciem danego pola; niezatwierdzone pomijamy)**
 - [ ] Dane z punktu 9.6, w tym `knowsLanguage`, współrzędne, logo, zdjęcia, `sameAs`, honorific, stanowisko i `alumniOf` lekarza, opisy usług, `areaServed`, `paymentAccepted`.
