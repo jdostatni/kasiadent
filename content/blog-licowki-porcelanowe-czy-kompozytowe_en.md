@@ -4,7 +4,7 @@ slug: "/en/blog/porcelain-vs-composite-veneers"
 meta_title: "Porcelain or composite veneers? A comparison"
 focus_keyword: "porcelain vs composite veneers"
 author: "Katarzyna Dostatnia, dentist"
-status: "English translation — requires practice approval and medical review before publication"
+status: "English translation approved by practice owner; medical review before publication remains pending"
 ---
 
 # Porcelain or composite veneers? How to choose an approach to improving your smile
@@ -95,6 +95,6 @@ At **dr KASIA DENT in Reda**, patients can discuss ways to improve the appearanc
 
 During the appointment, the dentist assesses the teeth and discusses available options, their limitations and expected costs.
 
-Find out more on our [Cosmetic dentistry](/en/services/cosmetic-dentistry) and [Prosthetic dentistry](/en/services/prosthetic-dentistry) pages.
+Find out more on our [Cosmetic dentistry](/en/services/cosmetic-dentistry) and [Prosthetic dentistry](/en/services/prosthodontics) pages.
 
 [Book a consultation](/en/contact) or call **505 518 718**.
