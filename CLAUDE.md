@@ -116,3 +116,7 @@ Po zakończeniu zadania przedstaw **jeden zbiorczy raport** (bez raportów pośr
 ## Aktualny przewodnik wdrożeniowy
 
 Przed nowym zadaniem dotyczącym strony zapoznaj się z `docs/IMPLEMENTATION_GUIDE.md`, który wskazuje zatwierdzone źródła prawdy, decyzje 56–118, checklistę oraz otwarte kwestie. Dokument ten nie zmienia zasad zgód z niniejszego `CLAUDE.md`. Aktualne zatwierdzone decyzje są dopisane do `docs/DECISIONS.md`; historyczny rejestr 1–55 znajduje się w `content/docs/DECISIONS_1-55.md`.
+
+## Bramka Claude Design przed implementacją (decyzje 187–191)
+
+Przed rozpoczęciem właściwej implementacji strony Claude Design przygotowuje trzy wyraźnie różne **rzeczywiste projekty wizualne strony głównej**, każdy w wersji desktop i mobile, zgodne z zatwierdzonymi treściami i identyfikacją. Nie projektować na tym etapie podstron usług. Wykorzystać dostępny skill UI/UX Pro Max jako wsparcie rekomendacji; nie instalować nowych narzędzi bez osobnej zgody. Właściciel wybiera lub łączy elementy koncepcji i musi zatwierdzić ostateczny kierunek **przed** implementacją. Następnie HTML/CSS/JS etapami, osobnymi PR. Szczegóły: `docs/IMPLEMENTATION_GUIDE.md`, zatwierdzone decyzje D-065–D-137 w `docs/DECISIONS.md`.
