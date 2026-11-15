@@ -40,3 +40,13 @@
 - Linki w istniejących treściach EN ujednolicono z zatwierdzoną mapą, w tym odnośniki do usług w artykułach.
 - Wcześniejsze uwagi o **braku zatwierdzenia** tłumaczeń i **braku mapy URL** są historyczne i już nieaktualne.
 - Nadal wymagane przed publikacją: weryfikacja medyczna, strony indeksowe i prawne, konfiguracja faktycznych tras HTML, sprawdzenie canonical/hreflang, formularza i RODO.
+
+## Aktualny stan po decyzjach 56–118 (2026-11-15)
+
+- Obowiązuje oficjalny rejestr `docs/DECISIONS.md` i przewodnik `docs/IMPLEMENTATION_GUIDE.md` w katalogu głównym repozytorium.
+- Wszystkie tłumaczenia EN i mapa URL PL/EN zostały zatwierdzone. Historyczne uwagi powyżej o braku akceptacji, roboczych slugach i błędnych linkach EN są **nieaktualne**; nie usuwać ich, ponieważ dokumentują przebieg audytu.
+- Godziny przyjęć wyłącznie na stronie Kontakt; telefon klikalny na mobile, zwykły tekst na desktopie.
+- Blog bez widocznych dat i z podpisem autora `dr KASIA DENT`.
+- Formularz: obowiązkowe imię, e-mail, telefon, wiadomość i pole potwierdzenia polityki prywatności. Weryfikacja prawna nadal konieczna.
+- Testy pod `/test/` z uwierzytelnianiem; hosting i produkcyjna strona nie są jeszcze skonfigurowane.
+- Wymóg WCAG 2.2 AA i decyzja o braku linku pomijającego nawigację wymagają dodatkowego przeglądu dostępności.
