@@ -112,3 +112,7 @@ Po zakończeniu zadania przedstaw **jeden zbiorczy raport** (bez raportów pośr
 - Flagi `--persist` i `--force` skryptu `search.py` (zapis plików `design-system/`) wymagają mojej zgody.
 - Aktualizacja skilla lub dodanie innych skilli wymaga mojej zgody i wcześniejszego przeglądu kodu.
 - Taste Skill jest odłożony: nie instaluj go ani nie uruchamiaj, dopóki właściciel nie zdecyduje inaczej.
+
+## Aktualny przewodnik wdrożeniowy
+
+Przed nowym zadaniem dotyczącym strony zapoznaj się z `docs/IMPLEMENTATION_GUIDE.md`, który wskazuje zatwierdzone źródła prawdy, decyzje 56–118, checklistę oraz otwarte kwestie. Dokument ten nie zmienia zasad zgód z niniejszego `CLAUDE.md`. Aktualne zatwierdzone decyzje są dopisane do `docs/DECISIONS.md`; historyczny rejestr 1–55 znajduje się w `content/docs/DECISIONS_1-55.md`.
