@@ -2,7 +2,7 @@
 
 Modern dental care for adults and children.
 
-**Button:** [Book an appointment](/kontakt)
+**Button:** [Book an appointment](/en/contact)
 
 <!-- Hero image: a smiling woman with beautiful, natural-looking teeth. -->
 
@@ -26,31 +26,31 @@ We strive to make every visit calm and welcoming. We take time to listen, carry 
 
 ## Our services
 
-### [General dentistry](/uslugi/stomatologia-zachowawcza)
+### [General dentistry](/en/services/general-dentistry)
 
 Tooth decay treatment, fillings and tooth restorations.
 
-### [Microscope-assisted root canal treatment](/uslugi/leczenie-kanalowe-pod-mikroskopem)
+### [Microscope-assisted root canal treatment](/en/services/root-canal-treatment)
 
 Root canal treatment using a dental microscope.
 
-### [Prosthetic dentistry](/uslugi/protetyka)
+### [Prosthetic dentistry](/en/services/prosthodontics)
 
 Crowns, bridges, veneers and removable dentures.
 
-### [Cosmetic dentistry](/uslugi/stomatologia-estetyczna)
+### [Cosmetic dentistry](/en/services/cosmetic-dentistry)
 
 Teeth whitening, composite bonding and veneers.
 
-### [Preventive dentistry](/uslugi/profilaktyka)
+### [Preventive dentistry](/en/services/preventive-dentistry)
 
 Scaling, air polishing and fluoride treatment.
 
-### [Children's dentistry](/uslugi/stomatologia-dziecieca)
+### [Children's dentistry](/en/services/childrens-dentistry)
 
 Dental check-ups, cavity treatment and introductory visits.
 
-### [Dental X-ray diagnostics](/uslugi/diagnostyka-rtg)
+### [Dental X-ray diagnostics](/en/services/dental-x-rays)
 
 Digital intraoral dental X-rays available on site.
 
@@ -64,14 +64,14 @@ Digital intraoral dental X-rays available on site.
 
 During your first visit, we learn about your needs, assess your oral health and discuss the next steps in your treatment.
 
-**Button:** [Find out more](/pierwsza-wizyta)
+**Button:** [Find out more](/en/first-visit)
 
 ## Why do patients choose dr KASIA DENT?
 
-**Experience and a wide range of services** — from [general dentistry](/uslugi/stomatologia-zachowawcza), cosmetic dentistry and preventive care to [microscope-assisted root canal treatment](/uslugi/leczenie-kanalowe-pod-mikroskopem).
+**Experience and a wide range of services** — from [general dentistry](/en/services/general-dentistry), cosmetic dentistry and preventive care to [microscope-assisted root canal treatment](/en/services/root-canal-treatment).
 
 **Modern diagnostics** — a dental microscope and digital dental X-rays available on site.
 
-**Convenient location** — our practice is in Reda, approximately an 8-minute walk from the SKM station. Easy access by public transport or car, with free parking in front of the building. [Get directions](/kontakt).
+**Convenient location** — our practice is in Reda, approximately an 8-minute walk from the SKM station. Easy access by public transport or car, with free parking in front of the building. [Get directions](/en/contact).
 
 **Transparent pricing** — view our price list and book a consultation.
