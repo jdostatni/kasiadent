@@ -33,7 +33,7 @@ Zanim powstanie makieta, Claude Design przedstawia **kierunek wizualny** wraz z 
 Ograniczenia znane już dziś: kierunek kolorystyczny biel, niebieski, granat; zasady z punktów 5–7; bez nieuzgodnionych zewnętrznych fontów, skryptów, zdjęć i integracji.
 
 ## 4. Identyfikacja wizualna
-- **Logo:** wyłącznie zatwierdzony, oryginalny plik dr KASIA DENT, bez przerabiania znaku i proporcji. Plik logo: DO ZATWIERDZENIA (wskazanie finalnego pliku przez właściciela).
+- **Logo:** zatwierdzone oryginalne warianty wektorowe SVG w `assets/logo/`; nie przerabiać znaku, napisu, proporcji ani kolorów. Szczegółowe przypisanie i ograniczenia: `docs/LOGO_USAGE.md`. Logo desktop: `zab_KD_logo_napis_poziomo_web.svg`; mobile: `zab_KD_samo_logo_web.svg`; stopka: `zab_KD_logo_napis_poziomo_2_linie_web.svg`; favicon: `zab_KD_samo_logo_web.svg`. Położenie logo w stopce pozostaje do wyboru właściciela po trzech koncepcjach Claude Design.
 - **Granat `#113269`:** kolor użyty w pracach nad logo. **Jego rola w interfejsie wymaga potwierdzenia przez właściciela** (czy ma być głównym kolorem UI).
   - Informacyjnie: kontrast `#113269` do bieli wynosi około 12,5:1 (wyliczenie, do potwierdzenia narzędziem do kontroli kontrastu).
 - **Kierunek kolorystyczny:** biel / niebieski / granat.
