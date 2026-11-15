@@ -32,3 +32,11 @@
 - Frontmatter zawiera różne zestawy pól (`metaTitle`, `metaDescription` lub `meta_title`, `title`, `slug`, `status`). Parser powinien obsłużyć obie konwencje lub je jawnie mapować, bez automatycznego nadpisywania zatwierdzonych danych.
 - Linki i routingi należy walidować przed publikacją, zwłaszcza wersję EN.
 - Wszystkie obrazy, logo, formularz i dane prawne to osobne zasoby lub zadania; sama paczka Markdown nie stanowi gotowej strony.
+
+## Aktualizacja po zatwierdzeniu mapy URL (2026-11-15)
+
+- Właściciel zatwierdził wszystkie tłumaczenia EN, w tym trzy artykuły blogowe. Nie jest to równoznaczne z odrębną weryfikacją medyczną.
+- Właściciel zatwierdził mapę URL: `content/docs/URL_MAP_PL_EN.md`.
+- Linki w istniejących treściach EN ujednolicono z zatwierdzoną mapą, w tym odnośniki do usług w artykułach.
+- Wcześniejsze uwagi o **braku zatwierdzenia** tłumaczeń i **braku mapy URL** są historyczne i już nieaktualne.
+- Nadal wymagane przed publikacją: weryfikacja medyczna, strony indeksowe i prawne, konfiguracja faktycznych tras HTML, sprawdzenie canonical/hreflang, formularza i RODO.
