@@ -4,7 +4,7 @@ slug: "/en/blog/how-to-brush-your-teeth-properly"
 meta_title: "How to brush your teeth properly | Dentist's advice"
 focus_keyword: "how to brush your teeth properly"
 author: "Katarzyna Dostatnia, dentist"
-status: "English translation — requires practice approval and medical review before publication"
+status: "English translation approved by practice owner; medical review before publication remains pending"
 ---
 
 # Brushing is not enough. How can you really look after a healthy smile?
