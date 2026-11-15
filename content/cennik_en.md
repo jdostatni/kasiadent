@@ -79,4 +79,4 @@
 |---|---:|
 | Intraoral X-ray of a tooth | PLN 50 |
 
-*All prices are indicative. The final cost in each individual case is determined by the dentist after examining the patient. [Book a consultation](/kontakt) or call: [505 518 718](tel:+48505518718).*
+*All prices are indicative. The final cost in each individual case is determined by the dentist after examining the patient. [Book a consultation](/en/contact) or call: [505 518 718](tel:+48505518718).*
