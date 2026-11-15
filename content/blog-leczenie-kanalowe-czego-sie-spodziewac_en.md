@@ -4,7 +4,7 @@ slug: "/en/blog/what-to-expect-from-root-canal-treatment"
 meta_title: "Does root canal treatment hurt? What to expect"
 focus_keyword: "does root canal treatment hurt"
 author: "Katarzyna Dostatnia, dentist"
-status: "English translation — requires practice approval and medical review before publication"
+status: "English translation approved by practice owner; medical review before publication remains pending"
 ---
 
 # Root canal treatment without unnecessary stress. What should you know before your appointment?
@@ -43,7 +43,7 @@ A dental microscope provides a magnified view of the treatment area. It is parti
 
 Finally, the tooth needs to be restored appropriately to recover its function and reduce the risk of fracture.
 
-Read more on our [Microscope-assisted endodontics](/en/services/root-canal-treatment-under-microscope) page.
+Read more on our [Microscope-assisted endodontics](/en/services/root-canal-treatment) page.
 
 ## Can a tooth hurt after root canal treatment?
 
