@@ -79,3 +79,9 @@ Jeśli OWS Stomatologia ma dobre rozwiązanie, można przyjąć je jako wzorzec 
 - Uzgodnić politykę prywatności/RODO, formularz i cookies.
 - Zatwierdzić obraz Hero i rzeczywiste zdjęcia.
 - Wybrać hosting i przetestować obie wersje językowe.
+
+## Dodatkowe zatwierdzenia po decyzji 55 (2026-11-15)
+
+- **Tłumaczenia EN:** właściciel zatwierdził wszystkie istniejące angielskie tłumaczenia, w tym trzy artykuły blogowe. Weryfikacja medyczna pozostaje oddzielnym zadaniem przed publikacją.
+- **Mapa adresów URL:** właściciel zatwierdził pełną mapę polskich i angielskich ścieżek, także usług, artykułów blogowych i polityki prywatności; szczegóły w `content/docs/URL_MAP_PL_EN.md`.
+- **Zgoda operacyjna:** właściciel zatwierdził poprawę linków, kontrolę i merge PR #5 do `main`. Nie oznacza to zgody na deployment strony.
