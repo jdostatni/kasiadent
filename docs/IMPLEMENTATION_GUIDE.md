@@ -52,3 +52,16 @@
 ## Zasada postępowania przy rozbieżnościach
 
 Nie edytuj historycznych decyzji ani zatwierdzonych tekstów „dla spójności”. Stosuj nowszą wyraźnie zatwierdzoną decyzję, odnotuj konflikt i przedstaw go właścicielowi, jeśli nie da się go rozstrzygnąć bez nowej decyzji.
+
+## Aktualizacja zatwierdzonych decyzji 119–191 (2026-11-15)
+
+- Pełna treść decyzji: `docs/DECISIONS.md`, wpisy D-065–D-137. Wcześniejsze rozbieżności rozstrzygają nowsze decyzje: 181 A dopuszcza link „Przejdź do treści” widoczny przy fokusie klawiatury (zamiast 96 B); 184 B odkłada rozwój Google Business Profile na po uruchomieniu strony (zamiast 63 B).
+- **Bezwzględna bramka projektowa:** przed pisaniem właściwej witryny Claude Design przygotowuje **trzy rzeczywiste, wyraźnie różne wizualne szkice strony głównej**, każdy desktop + mobile. Nie wystarczą opisy tekstowe. Stosować zatwierdzone treści, logo i kolorystykę; wykorzystać istniejący skill UI/UX Pro Max i ewentualne inne sprawdzone, dostępne skille. Instalacja nowych narzędzi wymaga osobnej zgody. Na tym etapie **nie** przygotowywać makiet podstron usług (189 B). Właściciel ocenia i może połączyć elementy propozycji; **bez jego akceptacji nie zaczynać implementacji**.
+- Dopiero po akceptacji koncepcji: HTML/CSS/JS, etapami i osobnymi PR (180 A). Pierwszy etap wspólny układ i homepage PL/EN; kolejne: pozostałe strony, integracje i testy. Merge oraz deployment wymagają osobnych zgód.
+- **Blog:** bez widocznych dat; w metadanych `BlogPosting.datePublished` rzeczywiste daty: mycie zębów 2026-11-15, leczenie kanałowe 2026-11-20, licówki 2026-11-25. Dat przyszłych nie deklarować jako już opublikowanych przed faktyczną publikacją. Blog rozwijać regularnie dla ruchu organicznego, bez CMS; każdy artykuł zatwierdzany PL/EN.
+- **Strategia:** wszystkie siedem usług równorzędne (182 B), lokalne SEO skoncentrowane na Redzie i naturalnych odniesieniach do Rumi/Wejherowa (183 A), Google Business Profile po starcie strony (184 B), Search Console na start, GA4 później (186 A).
+- **Kontakt i prywatność:** Google Maps ładuje się bezpośrednio na Kontakcie (159 B), ale wyłącznie po weryfikacji zgodności z wymogami prywatności; jeśli wymagana zgoda, należy ją obsłużyć przed załadowaniem mapy, a konflikt przedstawić właścicielowi. Formularz z wymaganymi polami i zabezpieczeniami z wcześniejszych decyzji; bez automatycznych odpowiedzi, z zachowaniem danych po błędzie. Nie dodawać osobnego komunikatu o pilnych przypadkach (149 B). Numer PL bez +48, EN z +48 (151 B).
+- **Mobile i dostępność:** dolny CTA stale widoczny, ale nie zasłania treści ani formularza (168 A); sticky header stale widoczny (165 A); dopuszczony dyskretny skip link po fokusie (181 A); cel WCAG 2.2 AA pozostaje.
+- **Operacje:** żadnych automatycznych deploymentów po merge, staging /test/ chroniony hasłem i oddzielnie zatwierdzany; testy realnego doręczenia formularza PL/EN na desktop/mobile; pełny odbiór i osobna zgoda na produkcję.
+
+**Uwaga do wcześniejszych akapitów tego przewodnika:** w razie sprzeczności z niniejszą aktualizacją stosować nowsze decyzje 119–191, bez przepisywania historycznych zapisów.
