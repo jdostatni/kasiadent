@@ -18,6 +18,7 @@
 - https://www.ows-stomatologia.pl/ – inspiracja **strukturą i funkcjonalnością**: układ menu i banerów, nawigacja, mechanika strony, prezentacja usług i ikon.
 - https://netgonet.pl/ – inspiracja **kolorystyką i estetyką**: biel, niebieski i granat.
 - Referencje służą wyłącznie do inspiracji. Nie kopiować cudzych tekstów, zdjęć, grafik, kodu ani układu 1:1.
+- Szczegółowa analiza zrzutów desktop i mobile OWS: `docs/references/OWS_ANALYSIS.md`. Zrzuty mają charakter wyłącznie referencyjny; sprawdzić dostępność PNG w repozytorium przed użyciem.
 
 ## 3. Kierunek wizualny (przed makietą)
 Zanim powstanie makieta, Claude Design przedstawia **kierunek wizualny** wraz z uzasadnieniem każdego elementu i czeka na akceptację właściciela:
