@@ -1168,3 +1168,19 @@ Data rejestracji: 2026-11-15. Zatwierdzone przez właściciela w rozmowie. Każd
 - **Źródło:** własna decyzja właściciela
 - **Status:** Zatwierdzona
 
+### D-141 – Treści EN strony głównej, etykiety interfejsu PL/EN i metadane strony głównej
+- **Data:** 2026-11-22
+- **Obszar:** treść
+- **Opis:** (1) Zatwierdzone treści EN strony głównej odpowiadające zmianom z prototypu D: kafelek konsultacji („Not sure where to start?” / „Start with a consultation – we will assess your dental health and recommend the next steps.” / przycisk „Book a consultation” do `/en/contact`) oraz cztery argumenty sekcji „Why do patients choose dr KASIA DENT?” w wersji T2 (bez myślników, opis od wielkiej litery), z czwartym argumentem „View our price list and book a consultation.”, w którym „price list” prowadzi do `/en/pricing`; zapis w `content/strona-glowna_en.md`. (2) Zatwierdzone etykiety interfejsu PL/EN zapisane w `docs/UI_LABELS_PL_EN.md`; na kafelkach usług EN „Learn more”, a przycisk sekcji pierwszej wizyty pozostaje „Find out more”. (3) Zatwierdzone meta title i meta description strony głównej PL i EN, zapisane w nagłówkach YAML (`slug`, `meta_title`, `meta_description`) plików `content/strona-glowna_pl.md` i `content/strona-glowna_en.md`; Open Graph korzysta z tych samych tekstów, obraz OG wymaga osobnej akceptacji.
+- **Uzasadnienie:** Uzupełnienie wersji EN i metadanych przed wdrożeniem strony głównej PL/EN (D-138; zasada jednoczesnego startu PL/EN).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
+### D-142 – Strategia adresów URL: wariant A
+- **Data:** 2026-11-22
+- **Obszar:** architektura
+- **Opis:** Strony zapisywane jako pliki `nazwa.html` (np. `kontakt.html`, `uslugi/protetyka.html`, `en/contact.html`; strony główne `index.html` i `en/index.html`) i serwowane przez reguły `.htaccess` pod adresami kanonicznymi bez rozszerzenia `.html` i bez końcowego ukośnika, z wyjątkiem `/` i `/en/`. Warianty adresów (z `.html`, z końcowym ukośnikiem, `index.html`, `/en`) przekierowywane 301 jednym skokiem na adres kanoniczny; nieznane adresy zwracają 404. Linki wewnętrzne względne (linki do adresów bez ukośnika budowane przez katalog nadrzędny, np. `../uslugi`), tak aby te same pliki działały w katalogu głównym i w wersji testowej `/test/`; `canonical`, `hreflang` i `og:url` pozostają adresami bezwzględnymi `https://www.kasiadent.pl/…`. Strategia przetestowana lokalnie na Apache 2.4.71 (86 kontroli bez błędów); po wyborze hostingu wymagane są ponowne testy.
+- **Uzasadnienie:** Wynik lokalnego testu wariantów (D-140 pkt 2) i konwencja adresów z `docs/SEO.md` (pkt 3.2).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+

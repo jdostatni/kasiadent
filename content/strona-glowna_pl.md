@@ -1,3 +1,9 @@
+---
+slug: "/"
+meta_title: "Dentysta Reda – gabinet stomatologiczny | dr KASIA DENT"
+meta_description: "Gabinet stomatologiczny w Redzie: stomatologia zachowawcza, endodoncja mikroskopowa, protetyka, stomatologia estetyczna, profilaktyka, stomatologia dziecięca i diagnostyka RTG."
+---
+
 # Gabinet stomatologiczny dr KASIA DENT w Redzie
 
 Nowoczesna stomatologia dla dorosłych i dzieci.
