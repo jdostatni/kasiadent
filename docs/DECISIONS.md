@@ -1160,3 +1160,11 @@ Data rejestracji: 2026-11-15. Zatwierdzone przez właściciela w rozmowie. Każd
 - **Źródło:** własna decyzja właściciela; zapis w `docs/SEO.md`
 - **Status:** Zatwierdzona
 
+### D-140 – Hosting, lokalny test adresów URL i zdjęcie hero
+- **Data:** 2026-11-22
+- **Obszar:** proces / technologia
+- **Opis:** (1) Hosting nie jest na razie kupowany; środowisko testowe `/test/` z hasłem zostanie przygotowane po wyborze hostingu i nie blokuje lokalnych prac nad stroną. (2) Strategia adresów URL (konwencja z `docs/SEO.md`: bez `.html` i bez końcowego ukośnika) zostanie przeanalizowana i przetestowana lokalnie przed implementacją i przed wyborem ostatecznej konfiguracji, bez instalowania Docker Desktop; instalacja nowego oprogramowania wymaga wcześniejszej propozycji i akceptacji właściciela (zaakceptowano przenośne narzędzia lokalne poza repozytorium: Apache, Node.js z Lighthouse i axe-core, walidator HTML, fonttools do WOFF2 — po sprawdzeniu wersji i zależności). (3) Zdjęcie hero nie trafia do repozytorium bez osobnej zgody właściciela, do czasu ustalenia jego pochodzenia i warunków wykorzystania; bez nieuzgodnionych zmian w `.gitignore`.
+- **Uzasadnienie:** Ustalenia właściciela do skorygowanego planu wdrożenia prototypu D (D-138).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
