@@ -17,6 +17,7 @@ Etykiety dotyczą wspólnych elementów stron (nagłówek, menu, stopka, przycis
 | Pozycja menu | Kontakt | Contact |
 | Link do indeksu usług (rozwijane menu, menu mobilne, sekcja usług) | Wszystkie usługi | All services |
 | Przycisk w nagłówku, w menu mobilnym i w dolnym pasku CTA (telefon) | Umów wizytę | Book an appointment |
+| Przełącznik języka (na stronie EN aktywne „EN”) | PL / EN | PL / EN |
 
 Nazwy siedmiu usług w menu i stopce — zgodnie z zatwierdzonymi nagłówkami usług w `content/strona-glowna_pl.md` i `content/strona-glowna_en.md`.
 
@@ -38,6 +39,8 @@ Przycisk w sekcji pierwszej wizyty pozostaje zgodny z treścią strony głównej
 | Wprowadzenie pod logo | Nowoczesna stomatologia dla dorosłych i dzieci. | Modern dental care for adults and children. |
 | Telefon (decyzja 151 B) | 505 518 718 | +48 505 518 718 |
 | Link w białym pasku copyright | Polityka prywatności | Privacy policy |
+| Tekst alternatywny logo w stopce | dr KASIA DENT | dr KASIA DENT |
+| Biały pasek copyright | © 2026 dr KASIA DENT | © 2026 dr KASIA DENT |
 
 ## Dostępność (teksty dla czytników ekranu i nawigacji klawiaturą)
 
@@ -47,3 +50,8 @@ Przycisk w sekcji pierwszej wizyty pozostaje zgodny z treścią strony głównej
 | Przycisk otwierający menu mobilne | Menu | Menu |
 | Przycisk zamykający menu mobilne | Zamknij menu | Close menu |
 | Przycisk rozwijający listę usług w menu desktop | Pokaż listę usług | Show list of services |
+| Etykieta linku logo w nagłówku | dr KASIA DENT – strona główna | dr KASIA DENT – home page |
+| Etykieta nawigacji desktop | Menu główne | Main menu |
+| Etykieta nawigacji w panelu menu | Menu mobilne | Mobile menu |
+| Etykieta okna pełnoekranowego menu | Menu | Menu |
+| Przycisk podmenu usług w menu mobilnym | Rozwiń listę usług | Expand list of services |
