@@ -1,3 +1,9 @@
+---
+slug: "/en/"
+meta_title: "Dentist in Reda – dental practice | dr KASIA DENT"
+meta_description: "Dental practice in Reda: general dentistry, microscope-assisted root canal treatment, prosthodontics, cosmetic and preventive dentistry, children's dentistry and dental X-rays."
+---
+
 # dr KASIA DENT Dental Practice in Reda
 
 Modern dental care for adults and children.
@@ -56,6 +62,14 @@ Digital intraoral dental X-rays available on site.
 
 <!-- Seven service tiles with icons and links to the service pages. -->
 
+<!-- Consultation tile: an additional call to action at the end of the services section, not an eighth service (D-138, C5). -->
+
+### Not sure where to start?
+
+Start with a consultation – we will assess your dental health and recommend the next steps.
+
+**Button:** [Book a consultation](/en/contact)
+
 ## Take a look inside our practice
 
 <!-- Gallery of real photographs of the practice interior and equipment. No additional description. -->
@@ -68,10 +82,20 @@ During your first visit, we learn about your needs, assess your oral health and 
 
 ## Why do patients choose dr KASIA DENT?
 
-**Experience and a wide range of services** — from [general dentistry](/en/services/general-dentistry), cosmetic dentistry and preventive care to [microscope-assisted root canal treatment](/en/services/root-canal-treatment).
+<!-- Layout: argument title and description as separate elements, numbering 01–04 in the template (D-138, C6: L6, T2). -->
 
-**Modern diagnostics** — a dental microscope and digital dental X-rays available on site.
+**Experience and a wide range of services**
 
-**Convenient location** — our practice is in Reda, approximately an 8-minute walk from the SKM station. Easy access by public transport or car, with free parking in front of the building. [Get directions](/en/contact).
+From [general dentistry](/en/services/general-dentistry), cosmetic dentistry and preventive care to [microscope-assisted root canal treatment](/en/services/root-canal-treatment).
 
-**Transparent pricing** — view our price list and book a consultation.
+**Modern diagnostics**
+
+A dental microscope and digital dental X-rays available on site.
+
+**Convenient location**
+
+Our practice is in Reda, approximately an 8-minute walk from the SKM station. Easy access by public transport or car, with free parking in front of the building. [Get directions](/en/contact).
+
+**Transparent pricing**
+
+View our [price list](/en/pricing) and book a consultation.

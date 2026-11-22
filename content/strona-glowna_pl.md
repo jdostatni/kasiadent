@@ -1,3 +1,9 @@
+---
+slug: "/"
+meta_title: "Dentysta Reda – gabinet stomatologiczny | dr KASIA DENT"
+meta_description: "Gabinet stomatologiczny w Redzie: stomatologia zachowawcza, endodoncja mikroskopowa, protetyka, stomatologia estetyczna, profilaktyka, stomatologia dziecięca i diagnostyka RTG."
+---
+
 # Gabinet stomatologiczny dr KASIA DENT w Redzie
 
 Nowoczesna stomatologia dla dorosłych i dzieci.
@@ -56,6 +62,14 @@ Cyfrowe, punktowe zdjęcia RTG na miejscu.
 
 <!-- Siedem kafelków z ikonami i linkami do podstron usług. -->
 
+<!-- Kafelek konsultacji: dodatkowe CTA na końcu sekcji usług, nie ósma usługa (D-138, C5). -->
+
+### Nie wiesz, od czego zacząć?
+
+Zacznij od konsultacji – ocenimy stan zębów i zaproponujemy dalsze kroki.
+
+**Przycisk:** [Umów konsultację](/kontakt)
+
 ## Zajrzyj do naszego gabinetu
 
 <!-- Galeria rzeczywistych zdjęć wnętrza gabinetu oraz wyposażenia. Bez dodatkowego opisu. -->
@@ -68,10 +82,20 @@ Podczas pierwszej wizyty poznajemy Twoje potrzeby, oceniamy stan zdrowia jamy us
 
 ## Dlaczego pacjenci wybierają dr KASIA DENT?
 
-**Doświadczenie i szeroki zakres usług** — od [stomatologii zachowawczej](/uslugi/stomatologia-zachowawcza), estetycznej, profilaktyki po [leczenie kanałowe pod mikroskopem](/uslugi/leczenie-kanalowe-pod-mikroskopem).
+<!-- Układ: tytuł argumentu i opis jako osobne elementy, numeracja 01–04 w szablonie (D-138, C6: L6, T2). -->
 
-**Nowoczesna diagnostyka** — mikroskop stomatologiczny i cyfrowe RTG zębów dostępne na miejscu.
+**Doświadczenie i szeroki zakres usług**
 
-**Dogodna lokalizacja** — Gabinet w Redzie, około 8 minut spacerem od stacji SKM. Łatwy dojazd komunikacją miejską i samochodem, bezpłatny parking przed budynkiem. [Sprawdź dojazd](/kontakt).
+Od [stomatologii zachowawczej](/uslugi/stomatologia-zachowawcza), estetycznej, profilaktyki po [leczenie kanałowe pod mikroskopem](/uslugi/leczenie-kanalowe-pod-mikroskopem).
 
-**Przejrzyste ceny** — poznaj cennik i umów się na konsultację.
+**Nowoczesna diagnostyka**
+
+Mikroskop stomatologiczny i cyfrowe RTG zębów dostępne na miejscu.
+
+**Dogodna lokalizacja**
+
+Gabinet w Redzie, około 8 minut spacerem od stacji SKM. Łatwy dojazd komunikacją miejską i samochodem, bezpłatny parking przed budynkiem. [Sprawdź dojazd](/kontakt).
+
+**Przejrzyste ceny**
+
+Poznaj nasz [cennik](/cennik) i umów się na konsultację.

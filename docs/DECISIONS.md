@@ -1142,3 +1142,45 @@ Data rejestracji: 2026-11-15. Zatwierdzone przez właściciela w rozmowie. Każd
 - **Źródło:** własna decyzja właściciela, rozmowa projektowa nr 191
 - **Status:** Zatwierdzona
 
+## Decyzje po wyborze kierunku wizualnego
+
+### D-138 – Prototyp D jako docelowy projekt graficzny strony głównej
+- **Data:** 2026-11-22
+- **Obszar:** wygląd
+- **Opis:** Lokalny prototyp D (baza: prototyp C „Granat redakcyjny premium”) jest docelowym projektem graficznym strony głównej dr KASIA DENT. Ostatecznie zaakceptowane są wszystkie wymagania C1–C7 z `docs/PROTOTYPE_D_SPEC.md` (C1 zdjęcie hero, C2 nawigacja desktop, C3 stopka w układzie A i kolorach C z białym paskiem copyright, C4 kadrowanie hero W3 na telefonie, C5 usługi L4 z hoverem H2, kafelkiem konsultacji K1 i wariantem C oznaczenia klikalności, C6 sekcja „Dlaczego…” L6 z tekstem T2, C7 hamburger przechodzący w ×) oraz późniejsze poprawki mobilne: wewnętrzny odstęp 24 px z lewej i prawej w kafelkach usług dla szerokości do 639 px włącznie (jednakowo w spoczynku, przy hover i fokusie) oraz kreski hamburgera 2,5 / 2,0 / 2,5 px o równej długości, kwadratowych zakończeniach i kolorze #113269. Wdrożenie zachowuje zatwierdzony wygląd; nie oznacza zgody na publikację, merge kodu ani deployment.
+- **Uzasadnienie:** Zakończenie etapu porównania koncepcji (D-134–D-137) i analiz C1–C7; wybór kierunku przed implementacją HTML/CSS/JS (D-126).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
+### D-139 – decyzje 192–198: hosting i poczta (zakres udokumentowany)
+- **Data rejestracji:** 2026-11-22
+- **Obszar:** technologia / proces
+- **Opis:** Decyzje rozmowy nr 192–198 zostały zatwierdzone przez właściciela wcześniej (najpóźniej 2026-11-15), ale nie trafiły do rejestru. W repozytorium udokumentowany jest wyłącznie ich łączny zakres (`docs/SEO.md`, aktualizacja spójności z 15.11.2026): hosting Hostido lub porównywalny dostawca do wyboru, **bez wyboru konkretnego hostingu**; publiczny adres e-mail `drkasiadent@gmail.com`. Szczegółowe brzmienie poszczególnych decyzji 192–198 nie jest dostępne w repozytorium; jeśli właściciel je przekaże, zostaną dopisane jako kolejne wpisy bez zmiany niniejszego.
+- **Uzasadnienie:** Uzupełnienie rejestru o decyzje przywołane w `docs/SEO.md`, bez dopowiadania treści, której nie ma w dokumentacji.
+- **Źródło:** własna decyzja właściciela; zapis w `docs/SEO.md`
+- **Status:** Zatwierdzona
+
+### D-140 – Hosting, lokalny test adresów URL i zdjęcie hero
+- **Data:** 2026-11-22
+- **Obszar:** proces / technologia
+- **Opis:** (1) Hosting nie jest na razie kupowany; środowisko testowe `/test/` z hasłem zostanie przygotowane po wyborze hostingu i nie blokuje lokalnych prac nad stroną. (2) Strategia adresów URL (konwencja z `docs/SEO.md`: bez `.html` i bez końcowego ukośnika) zostanie przeanalizowana i przetestowana lokalnie przed implementacją i przed wyborem ostatecznej konfiguracji, bez instalowania Docker Desktop; instalacja nowego oprogramowania wymaga wcześniejszej propozycji i akceptacji właściciela (zaakceptowano przenośne narzędzia lokalne poza repozytorium: Apache, Node.js z Lighthouse i axe-core, walidator HTML, fonttools do WOFF2 — po sprawdzeniu wersji i zależności). (3) Zdjęcie hero nie trafia do repozytorium bez osobnej zgody właściciela, do czasu ustalenia jego pochodzenia i warunków wykorzystania; bez nieuzgodnionych zmian w `.gitignore`.
+- **Uzasadnienie:** Ustalenia właściciela do skorygowanego planu wdrożenia prototypu D (D-138).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
+### D-141 – Treści EN strony głównej, etykiety interfejsu PL/EN i metadane strony głównej
+- **Data:** 2026-11-22
+- **Obszar:** treść
+- **Opis:** (1) Zatwierdzone treści EN strony głównej odpowiadające zmianom z prototypu D: kafelek konsultacji („Not sure where to start?” / „Start with a consultation – we will assess your dental health and recommend the next steps.” / przycisk „Book a consultation” do `/en/contact`) oraz cztery argumenty sekcji „Why do patients choose dr KASIA DENT?” w wersji T2 (bez myślników, opis od wielkiej litery), z czwartym argumentem „View our price list and book a consultation.”, w którym „price list” prowadzi do `/en/pricing`; zapis w `content/strona-glowna_en.md`. (2) Zatwierdzone etykiety interfejsu PL/EN zapisane w `docs/UI_LABELS_PL_EN.md`; na kafelkach usług EN „Learn more”, a przycisk sekcji pierwszej wizyty pozostaje „Find out more”. (3) Zatwierdzone meta title i meta description strony głównej PL i EN, zapisane w nagłówkach YAML (`slug`, `meta_title`, `meta_description`) plików `content/strona-glowna_pl.md` i `content/strona-glowna_en.md`; Open Graph korzysta z tych samych tekstów, obraz OG wymaga osobnej akceptacji.
+- **Uzasadnienie:** Uzupełnienie wersji EN i metadanych przed wdrożeniem strony głównej PL/EN (D-138; zasada jednoczesnego startu PL/EN).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
+### D-142 – Strategia adresów URL: wariant A
+- **Data:** 2026-11-22
+- **Obszar:** architektura
+- **Opis:** Strony zapisywane jako pliki `nazwa.html` (np. `kontakt.html`, `uslugi/protetyka.html`, `en/contact.html`; strony główne `index.html` i `en/index.html`) i serwowane przez reguły `.htaccess` pod adresami kanonicznymi bez rozszerzenia `.html` i bez końcowego ukośnika, z wyjątkiem `/` i `/en/`. Warianty adresów (z `.html`, z końcowym ukośnikiem, `index.html`, `/en`) przekierowywane 301 jednym skokiem na adres kanoniczny; nieznane adresy zwracają 404. Linki wewnętrzne względne (linki do adresów bez ukośnika budowane przez katalog nadrzędny, np. `../uslugi`), tak aby te same pliki działały w katalogu głównym i w wersji testowej `/test/`; `canonical`, `hreflang` i `og:url` pozostają adresami bezwzględnymi `https://www.kasiadent.pl/…`. Strategia przetestowana lokalnie na Apache 2.4.71 (86 kontroli bez błędów); po wyborze hostingu wymagane są ponowne testy.
+- **Uzasadnienie:** Wynik lokalnego testu wariantów (D-140 pkt 2) i konwencja adresów z `docs/SEO.md` (pkt 3.2).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+

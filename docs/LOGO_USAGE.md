@@ -12,6 +12,7 @@
 | `zab_KD_logo_napis_poziomo_ponizej_web.svg` | Wariant pomocniczy, nieprzypisany do stałego miejsca |
 | `napis_poziomo_sam_web.svg` | Wariant pomocniczy: sam napis w jednej linii |
 | `napis_poziomo_2_linie_web.svg` | Wariant pomocniczy: sam napis w dwóch liniach |
+| `zab_KD_logo_napis_poziomo_2_linie_web_bialy.svg` | **Stopka na granatowym tle** — biała kopia logo stopki (D-138); plik dodawany w etapie wdrożenia strony głównej, patrz sekcja „Biały wariant logo stopki” |
 
 **Ważne:** dwa warianty dwuliniowe to poprawione pliki dostarczone jako `...(1).svg` 15.11.2026; w repozytorium zapisane pod kanonicznymi nazwami bez `(1)`. Wszystkie sześć plików nie zawiera obiektów `<text>`; zachowano oryginalne ścieżki wektorowe.
 
@@ -19,9 +20,16 @@
 
 1. Desktop: logo podstawowe poziome; w nagłówku po lewej.
 2. Mobile: **tylko sam ząb KD** w nagłówku, nie pełny napis.
-3. Stopka: ząb po lewej + napis `dr KASIA / DENT` w dwóch liniach. **Położenie całego logo w stopce nie jest jeszcze zatwierdzone**: Claude Design pokazuje różne propozycje w trzech koncepcjach; wybiera właściciel.
+3. Stopka: ząb po lewej + napis `dr KASIA / DENT` w dwóch liniach. **Położenie zatwierdzone (D-138):** logo w pierwszej kolumnie granatowej stopki (układ stopki z prototypu A w kolorach prototypu C), nad krótkim wprowadzeniem, w białym wariancie dwuliniowym `zab_KD_logo_napis_poziomo_2_linie_web_bialy.svg` (sekcja „Biały wariant logo stopki”).
 4. Favicon: **oryginalny ząb KD**, bez upraszczania, bez zastępowania samym obrysem. Rozmiary i czytelność do przetestowania; ewentualne uproszczenie wymaga nowej zgody.
 5. Warianty pomocnicze nie mogą zastępować powyższych zatwierdzonych wyborów bez nowej zgody.
+
+## Biały wariant logo stopki (D-138, 2026-11-22)
+
+- **Plik:** `zab_KD_logo_napis_poziomo_2_linie_web_bialy.svg` — kopia pliku `zab_KD_logo_napis_poziomo_2_linie_web.svg`, w której **jedyną zmianą** jest kolor wypełnienia ścieżek: `#113269` → `#ffffff` (8 elementów). Ścieżki, proporcje, litery i układ znaku pozostają identyczne; oryginalny plik nie jest modyfikowany.
+- **Zastosowanie:** wyłącznie w stopce na granatowym tle (pierwsza kolumna, nad wprowadzeniem „Nowoczesna stomatologia dla dorosłych i dzieci.”), z tekstem alternatywnym `dr KASIA DENT`. Biały pasek copyright pod stopką nie zawiera logo.
+- **Ograniczenia:** biały wariant nie zastępuje logo w nagłówku desktop ani mobile i nie jest używany na jasnym tle. Inne zmiany kolorystyczne logo wymagają nowej zgody właściciela.
+- **Dodanie do repozytorium:** razem z kodem strony głównej (etap 1 wdrożenia), po przeglądzie technicznym SVG opisanym w sekcji „Kontrole techniczne przed użyciem w WWW”.
 
 ## Instrukcja dla Claude Design — przekazanie do etapu koncepcji
 
