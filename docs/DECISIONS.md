@@ -1142,3 +1142,21 @@ Data rejestracji: 2026-11-15. Zatwierdzone przez właściciela w rozmowie. Każd
 - **Źródło:** własna decyzja właściciela, rozmowa projektowa nr 191
 - **Status:** Zatwierdzona
 
+## Decyzje po wyborze kierunku wizualnego
+
+### D-138 – Prototyp D jako docelowy projekt graficzny strony głównej
+- **Data:** 2026-11-22
+- **Obszar:** wygląd
+- **Opis:** Lokalny prototyp D (baza: prototyp C „Granat redakcyjny premium”) jest docelowym projektem graficznym strony głównej dr KASIA DENT. Ostatecznie zaakceptowane są wszystkie wymagania C1–C7 z `docs/PROTOTYPE_D_SPEC.md` (C1 zdjęcie hero, C2 nawigacja desktop, C3 stopka w układzie A i kolorach C z białym paskiem copyright, C4 kadrowanie hero W3 na telefonie, C5 usługi L4 z hoverem H2, kafelkiem konsultacji K1 i wariantem C oznaczenia klikalności, C6 sekcja „Dlaczego…” L6 z tekstem T2, C7 hamburger przechodzący w ×) oraz późniejsze poprawki mobilne: wewnętrzny odstęp 24 px z lewej i prawej w kafelkach usług dla szerokości do 639 px włącznie (jednakowo w spoczynku, przy hover i fokusie) oraz kreski hamburgera 2,5 / 2,0 / 2,5 px o równej długości, kwadratowych zakończeniach i kolorze #113269. Wdrożenie zachowuje zatwierdzony wygląd; nie oznacza zgody na publikację, merge kodu ani deployment.
+- **Uzasadnienie:** Zakończenie etapu porównania koncepcji (D-134–D-137) i analiz C1–C7; wybór kierunku przed implementacją HTML/CSS/JS (D-126).
+- **Źródło:** własna decyzja właściciela
+- **Status:** Zatwierdzona
+
+### D-139 – decyzje 192–198: hosting i poczta (zakres udokumentowany)
+- **Data rejestracji:** 2026-11-22
+- **Obszar:** technologia / proces
+- **Opis:** Decyzje rozmowy nr 192–198 zostały zatwierdzone przez właściciela wcześniej (najpóźniej 2026-11-15), ale nie trafiły do rejestru. W repozytorium udokumentowany jest wyłącznie ich łączny zakres (`docs/SEO.md`, aktualizacja spójności z 15.11.2026): hosting Hostido lub porównywalny dostawca do wyboru, **bez wyboru konkretnego hostingu**; publiczny adres e-mail `drkasiadent@gmail.com`. Szczegółowe brzmienie poszczególnych decyzji 192–198 nie jest dostępne w repozytorium; jeśli właściciel je przekaże, zostaną dopisane jako kolejne wpisy bez zmiany niniejszego.
+- **Uzasadnienie:** Uzupełnienie rejestru o decyzje przywołane w `docs/SEO.md`, bez dopowiadania treści, której nie ma w dokumentacji.
+- **Źródło:** własna decyzja właściciela; zapis w `docs/SEO.md`
+- **Status:** Zatwierdzona
+
