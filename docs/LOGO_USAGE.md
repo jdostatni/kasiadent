@@ -20,7 +20,7 @@
 
 1. Desktop: logo podstawowe poziome; w nagłówku po lewej.
 2. Mobile: **tylko sam ząb KD** w nagłówku, nie pełny napis.
-3. Stopka: ząb po lewej + napis `dr KASIA / DENT` w dwóch liniach. **Położenie całego logo w stopce nie jest jeszcze zatwierdzone**: Claude Design pokazuje różne propozycje w trzech koncepcjach; wybiera właściciel. **Aktualizacja 2026-11-22 (D-138):** położenie wybrane — logo w pierwszej kolumnie granatowej stopki (układ stopki z prototypu A w kolorach prototypu C), nad krótkim wprowadzeniem; na granatowym tle w białym wariancie opisanym niżej.
+3. Stopka: ząb po lewej + napis `dr KASIA / DENT` w dwóch liniach. **Położenie zatwierdzone (D-138):** logo w pierwszej kolumnie granatowej stopki (układ stopki z prototypu A w kolorach prototypu C), nad krótkim wprowadzeniem, w białym wariancie dwuliniowym `zab_KD_logo_napis_poziomo_2_linie_web_bialy.svg` (sekcja „Biały wariant logo stopki”).
 4. Favicon: **oryginalny ząb KD**, bez upraszczania, bez zastępowania samym obrysem. Rozmiary i czytelność do przetestowania; ewentualne uproszczenie wymaga nowej zgody.
 5. Warianty pomocnicze nie mogą zastępować powyższych zatwierdzonych wyborów bez nowej zgody.
 
