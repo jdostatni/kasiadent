@@ -73,4 +73,4 @@ At **dr KASIA DENT in Reda**, root canal treatment is performed using a dental m
 
 If a tooth hurts, reacts to temperature or has previously undergone root canal treatment and is causing problems again, consider booking a diagnostic appointment.
 
-[Contact the practice](/en/contact) or call **505 518 718**.
+[Contact the practice](/en/contact) or call **[+48 505 518 718](tel:+48505518718)**.

@@ -97,4 +97,4 @@ Podczas wizyty lekarz ocenia stan zębów i omawia możliwe rozwiązania, ich og
 
 Więcej informacji znajdziesz na stronach [Stomatologia estetyczna](/uslugi/stomatologia-estetyczna) i [Protetyka](/uslugi/protetyka).
 
-[Umów konsultację](/kontakt) lub zadzwoń: **505 518 718**.
+[Umów konsultację](/kontakt) lub zadzwoń: **[505 518 718](tel:+48505518718)**.

@@ -67,4 +67,4 @@ You do not need to wait for toothache. Bleeding gums, persistent bad breath, sen
 
 At **dr KASIA DENT in Reda**, we can assess your oral health, discuss your daily hygiene habits and recommend suitable preventive care.
 
-[Book an appointment](/en/contact) or call **505 518 718**.
+[Book an appointment](/en/contact) or call **[+48 505 518 718](tel:+48505518718)**.

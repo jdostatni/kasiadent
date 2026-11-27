@@ -73,4 +73,4 @@ W gabinecie **dr KASIA DENT w Redzie** wykonywane jest leczenie kanałowe z wyko
 
 Jeśli ząb boli, reaguje na temperaturę lub wcześniej był leczony kanałowo i ponownie sprawia problemy, warto umówić wizytę diagnostyczną.
 
-[Skontaktuj się z gabinetem](/kontakt) lub zadzwoń: **505 518 718**.
+[Skontaktuj się z gabinetem](/kontakt) lub zadzwoń: **[505 518 718](tel:+48505518718)**.

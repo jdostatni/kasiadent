@@ -44,7 +44,7 @@ W gabinecie dostępne są również wizyty adaptacyjne, podczas których dziecko
 
 W celu umówienia wizyty proszę o kontakt telefoniczny lub mailowy.
 
-**Telefon: 505 518 718**
+**Telefon: [505 518 718](tel:+48505518718)**
 
 **E-mail:** [drkasiadent@gmail.com](mailto:drkasiadent@gmail.com)
 

@@ -44,7 +44,7 @@ We also offer introductory visits, during which children can explore the practic
 
 Please contact us by phone or email to arrange an appointment.
 
-**Phone: [505 518 718](tel:+48505518718)**
+**Phone: [+48 505 518 718](tel:+48505518718)**
 
 **Email:** [drkasiadent@gmail.com](mailto:drkasiadent@gmail.com)
 
