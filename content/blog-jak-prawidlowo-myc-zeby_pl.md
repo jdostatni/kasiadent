@@ -67,4 +67,4 @@ Nie trzeba czekać na ból zęba. Krwawienie dziąseł, utrzymujący się nieprz
 
 W gabinecie **dr KASIA DENT w Redzie** można ocenić stan jamy ustnej, omówić codzienne nawyki higieniczne i dobrać odpowiednią profilaktykę.
 
-[Umów wizytę](/kontakt) lub zadzwoń: **505 518 718**.
+[Umów wizytę](/kontakt) lub zadzwoń: **[505 518 718](tel:+48505518718)**.

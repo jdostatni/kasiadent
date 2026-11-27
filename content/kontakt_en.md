@@ -1,6 +1,6 @@
 ---
 metaTitle: "Contact and directions – dentist in Reda | dr KASIA DENT"
-metaDescription: "dr KASIA DENT dental practice in Reda, ul. Osadnicza 3/B33. Phone: 505 518 718. Find opening hours, parking and directions."
+metaDescription: "dr KASIA DENT dental practice in Reda, ul. Osadnicza 3/B33. Phone: +48 505 518 718. Find opening hours, parking and directions."
 ---
 
 # Contact
@@ -13,7 +13,7 @@ ul. Osadnicza 3/B33
 
 84-240 Reda, Poland
 
-Phone: [505 518 718](tel:+48505518718)
+Phone: [+48 505 518 718](tel:+48505518718)
 
 Email: [drkasiadent@gmail.com](mailto:drkasiadent@gmail.com)
 

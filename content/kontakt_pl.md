@@ -13,7 +13,7 @@ ul. Osadnicza 3/B33
 
 84-240 Reda
 
-Telefon: 505 518 718
+Telefon: [505 518 718](tel:+48505518718)
 
 Email: [drkasiadent@gmail.com](mailto:drkasiadent@gmail.com)
 

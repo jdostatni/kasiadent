@@ -97,4 +97,4 @@ During the appointment, the dentist assesses the teeth and discusses available o
 
 Find out more on our [Cosmetic dentistry](/en/services/cosmetic-dentistry) and [Prosthetic dentistry](/en/services/prosthodontics) pages.
 
-[Book a consultation](/en/contact) or call **505 518 718**.
+[Book a consultation](/en/contact) or call **[+48 505 518 718](tel:+48505518718)**.
