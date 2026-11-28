@@ -113,6 +113,13 @@ Po zakończeniu zadania przedstaw **jeden zbiorczy raport** (bez raportów pośr
 - Aktualizacja skilla lub dodanie innych skilli wymaga mojej zgody i wcześniejszego przeglądu kodu.
 - Taste Skill jest odłożony: nie instaluj go ani nie uruchamiaj, dopóki właściciel nie zdecyduje inaczej.
 
+## 11. Strategia testowania A/B/C (D-168)
+- Zakres testów dobieraj do zakresu zmian: poziom A – drobna zmiana, B – nowa podstrona lub komponent, C – przed publikacją lub przy istotnej zmianie wspólnej architektury. Szczegóły i zakresy domyślne: D-168 w `docs/DECISIONS.md`.
+- Przed testami sprawdź aktualne wcześniejsze wyniki i wykorzystaj je. Nie powtarzaj pozytywnie zakończonych testów, jeżeli pliki, zależności i istotne warunki pozostają niezmienione; identyczność kandydatów z plikami końcowymi potwierdzaj sumami kontrolnymi.
+- Unikaj testów, plansz i rozbudowy infrastruktury testowej, które nie wynikają z rzeczywistego zakresu zmiany.
+- Przed kosztownymi testami przedstaw zakres, liczbę przebiegów, uzasadnienie, możliwość wykorzystania wcześniejszych wyników i szacowany czas – i poczekaj na akceptację. Nie rozszerzaj zatwierdzonego zakresu bez kolejnej zgody.
+- W raportach rozróżniaj nowe wyniki, wykorzystane wcześniejsze wyniki i testy pominięte. Wymagania jakościowe, dostępności i bezpieczeństwa pozostają bez zmian.
+
 ## Aktualny przewodnik wdrożeniowy
 
 Przed nowym zadaniem dotyczącym strony zapoznaj się z `docs/IMPLEMENTATION_GUIDE.md`, który wskazuje zatwierdzone źródła prawdy, decyzje 56–118, checklistę oraz otwarte kwestie. Dokument ten nie zmienia zasad zgód z niniejszego `CLAUDE.md`. Aktualne zatwierdzone decyzje są dopisane do `docs/DECISIONS.md`; historyczny rejestr 1–55 znajduje się w `content/docs/DECISIONS_1-55.md`.
